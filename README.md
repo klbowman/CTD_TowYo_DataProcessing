@@ -22,6 +22,7 @@ The Jupyter Notebook file accomplishes the following steps:
 
 ### Technologies Used 
 
+* Jupyter Notebook
 * Python
 * Pandas
 * Matplotlib
