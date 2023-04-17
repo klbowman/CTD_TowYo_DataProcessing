@@ -6,32 +6,32 @@ Python script to process Sea-Bird CTD data collected during a "Tow-Yo" operation
 
 This repository is designed to separate multiple "up" and "down" casts from an indivudal CTD data file. Tow-Yo is a technique used to search for anamolies in sensor data such as temperature, salinity, and beam attenuation (i.e., turbidity). This technique is used to search for plumes in the water column, such as those found at deep-sea hydrothermal vents. Sensor data is collected continuously as a CTD is towed from the back of a ship and repeatedly lowered up and down through the water column. 
 
-SBE Data Processing software is designed to split one file into two separate data files - one "up" cast and one "down" cast file. Tow-Yo data files contain several series of increasing and decreasing depths, but SBE Data Processing Software will still only create two files, categorizing data as either up or down. The Python script shared here can be used to create indivudal files for any or all "up" and "down" casts of interest. 
+SBE Data Processing software is designed to split one CTD data file into two separate files - one "up" cast and one "down" cast file. Tow-Yo data files contain several series of increasing and decreasing depths, SBE Data Processing Software can only categorize data as "up" or "down" and will still only create two files. The Python script shared here can be used to create indivudal files for any or all "up" and "down" casts of interest. This is accomplished by binning data by time to isolate indivudal 
 
-The dashboard includes a drop-down menu that displays the numerical code for each individual sample. When a sample is selected, the “Demographic Info” panel is populated with metadata and the following three charts are populated with data:
-* Bar graph displaying the top 10 OTUs by count
-* Gauge plot showing the belly button scrubs per week
-* Bubble plot displaying OTU counts for the entire sample
+The Jupyter Notebook file accomplishes the following steps:
+* Removes rows of data tagged as bad (i.e., -9.990e-29 Bad_Flags values)
+* Generates a plot of CTD depth verses time to visualize up and down casts
+* Creates individual up and down cast files for any desired time interval
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/74067302/145615550-98e49162-44c9-4e39-9050-ba837dc42863.png" alt="Dashboard Image"/>
 </p>
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/74067302/145615561-5fc19f35-646b-47aa-9f63-4a93a495efe5.png" alt="Dashboard Image"/>
-</p>
+
+![CTD_TowYo](https://user-images.githubusercontent.com/74067302/232626692-7611c31a-140c-4e20-9ee6-b81e7a0eeabd.png)
 
 ## Getting Started
 
 ### Technologies Used 
 
-* JavaScript
-* HTML
-* CSS
+* Python
+* Pandas
+* Matplotlib
 
 ### Installing
 
 * Clone this repository to your desktop.
-* Navigate to the home directory and open index.html in your browser.
+* Navigate to the home directory and open Tow-Yo CTD Data Parsing.ipynb.
+* Import unbinned SBE CTD data as a CSV file.
 
 ### Data Sources
 
