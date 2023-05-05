@@ -37,10 +37,14 @@ The Jupyter Notebook file accomplishes the following steps:
 
 * Unpublished CTD data
 
-## Author
+## Authors
 
 Katlin Bowman Adamczyk, PhD
 
 E: kadamczyk@usgs.gov
 
 [LinkedIn](https://www.linkedin.com/in/katlin-bowman/)
+
+Iris Kubler-Dudgeon
+E: ikublerd@ucsd.edu
+[LinkedIn](https://www.linkedin.com/in/iris-kubler-dudgeon/)
