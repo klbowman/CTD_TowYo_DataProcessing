@@ -46,5 +46,7 @@ E: kadamczyk@usgs.gov
 [LinkedIn](https://www.linkedin.com/in/katlin-bowman/)
 
 Iris Kubler-Dudgeon
+
 E: ikublerd@ucsd.edu
+
 [LinkedIn](https://www.linkedin.com/in/iris-kubler-dudgeon/)
